@@ -9,13 +9,72 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/dictionary-web-app/assets/index-f04f25c2.js"></script>
-    <link rel="stylesheet" href="/dictionary-web-app/assets/index-658622ad.css">
+    <script type="module" crossorigin src="/dictionary-web-app/assets/index-b9fbd6c6.js"></script>
+    <link rel="stylesheet" href="/dictionary-web-app/assets/index-2f74def2.css">
   </head>
   <body>
-    <header></header>
+    <header class="header">
+  <div class="header-container container">
+    <a href="" class="header-logo">
+      <svg class="header-logo-icon" width="28" height="32">
+        <use href="/dictionary-web-app/assets/sprite-8d4899fc.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <div class="header-group">
+      <select id="fontSelector" class="header-select">
+        <option class="header-select-option" value="--font-mono" selected>
+          Mono
+        </option>
+        <option class="header-select-option" value="--font-serif">Lora</option>
+        <option class="header-select-option" value="--font-sans">Sans</option>
+      </select>
 
-    <main></main>
+      <div class="header-theme">
+        <label class="header-theme-toggle">
+          <input type="checkbox" class="header-checkbox" />
+          <div class="header-switch"></div>
+          <svg class="header-theme-icon" width="20" height="20">
+            <use href="/dictionary-web-app/assets/sprite-8d4899fc.svg#icon-moon"></use>
+          </svg>
+        </label>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="search-section">
+  <div class="search-container container">
+    <form class="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        placeholder="Search for any word…"
+        class="search-input"
+      />
+      <button type="submit" class="search-btn">
+        <svg class="search-btn-icon" width="16" height="16">
+          <use href="/dictionary-web-app/assets/sprite-8d4899fc.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
+    <div class="search-output"></div>
+  </div>
+</section>
+
+      <div class="no-data-wrapper"></div>
+
+      <section class="noun-section">
+  <div class="noun-container container"></div>
+</section>
+
+      <section class="verb-section">
+  <div class="verb-container container"></div>
+</section>
+
+    </main>
+    <footer class="footer"></footer>
+
     
   </body>
 </html>
