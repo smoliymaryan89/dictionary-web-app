@@ -1,0 +1,54 @@
+.verb-title {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 31px;
+
+  font-size: 18px;
+}
+
+@media screen and (min-width: 767.98px) {
+  .verb-title {
+    font-size: 24px;
+    margin-bottom: 44px;
+  }
+}
+.verb-list {
+  padding-left: 20px;
+}
+.verb-item {
+  position: relative;
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+}
+.verb-item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.verb-item::before {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+
+  display: inline-block;
+  content: '';
+
+  width: 5px;
+  height: 5px;
+
+  background-color: var(--dark-purple-cl);
+  border-radius: 50%;
+}
+.verb-example {
+  color: var(--secondary-cl);
+}
+
+@media screen and (min-width: 767.98px) {
+  .verb-item {
+    font-size: 18px;
+  }
+  .verb-example {
+    font-size: 18px;
+  }
+}

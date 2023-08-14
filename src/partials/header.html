@@ -1,1 +1,28 @@
-<header></header>
+<header class="header">
+  <div class="header-container container">
+    <a href="" class="header-logo">
+      <svg class="header-logo-icon" width="28" height="32">
+        <use href="./images/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <div class="header-group">
+      <select id="fontSelector" class="header-select">
+        <option class="header-select-option" value="--font-mono" selected>
+          Mono
+        </option>
+        <option class="header-select-option" value="--font-serif">Lora</option>
+        <option class="header-select-option" value="--font-sans">Sans</option>
+      </select>
+
+      <div class="header-theme">
+        <label class="header-theme-toggle">
+          <input type="checkbox" class="header-checkbox" />
+          <div class="header-switch"></div>
+          <svg class="header-theme-icon" width="20" height="20">
+            <use href="./images/sprite.svg#icon-moon"></use>
+          </svg>
+        </label>
+      </div>
+    </div>
+  </div>
+</header>
