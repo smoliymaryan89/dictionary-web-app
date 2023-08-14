@@ -18,6 +18,7 @@ refs.noun.addEventListener('click', async event => {
 });
 
 export default async function renderSynonymDefinition(synonym) {
+  refs.loader.classList.add('loader-active');
   try {
     clearMarkup();
     const res = await fetchWordByQuery(synonym);
@@ -31,5 +32,7 @@ export default async function renderSynonymDefinition(synonym) {
   } catch (error) {
     Notify.failure('Something went wrong. Please try again!');
     refs.noData.insertAdjacentHTML('beforeend', createNoDataMarkup());
+  } finally {
+    refs.loader.classList.remove('loader-active');
   }
 }

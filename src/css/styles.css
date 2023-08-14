@@ -12,6 +12,6 @@
 @import url('./layouts/verb.css');
 @import url('./layouts/footer.css');
 @import url('./layouts/no-data.css');
-
+@import url('./layouts/loader.css');
 /* UTILS */
 @import url('./utils/variable.css');

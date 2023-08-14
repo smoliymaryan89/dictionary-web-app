@@ -22,6 +22,8 @@ refs.form.addEventListener('submit', async event => {
   }
   clearMarkup();
 
+  refs.loader.classList.add('loader-active');
+
   try {
     const res = await fetchWordByQuery(searchQuery);
 
@@ -35,7 +37,8 @@ refs.form.addEventListener('submit', async event => {
   } catch (error) {
     Notify.failure('Something went wrong. Please try again!');
     refs.noData.insertAdjacentHTML('beforeend', createNoDataMarkup());
+  } finally {
+    refs.loader.classList.remove('loader-active');
+    refs.form.reset();
   }
-
-  refs.form.reset();
 });

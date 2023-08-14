@@ -9,6 +9,7 @@ const refs = {
   toggleTheme: document.querySelector('.header-checkbox'),
   body: document.querySelector('body'),
   fontSelector: document.querySelector('#fontSelector'),
+  loader: document.querySelector('.loader-wrapper'),
 };
 
 export default refs;
