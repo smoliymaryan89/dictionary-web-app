@@ -1,0 +1,39 @@
+body.dark-theme {
+  background-color: var(--dark-theme-bg);
+}
+
+.dark-theme .search-input {
+  background-color: var(--dark-light);
+  color: var(--white-cl);
+}
+
+.dark-theme .search-input::placeholder {
+  color: var(--white-cl);
+  opacity: 0.25;
+}
+
+.dark-theme .output-word,
+.dark-theme .noun-title,
+.dark-theme .verb-title,
+.dark-theme .meaning-item,
+.dark-theme .verb-item,
+.dark-theme .source-link,
+.dark-theme .header-select {
+  color: var(--white-cl);
+}
+
+.dark-theme .title::after {
+  background-color: var(--dark-grey-cl);
+}
+
+.dark-theme .footer-container {
+  border-color: var(--dark-grey-cl);
+}
+
+.dark-theme .header-select-option {
+  background: var(--dark-light);
+}
+
+.dark-theme .no-data-title {
+  color: var(--white-cl);
+}

@@ -1,5 +1,6 @@
 /* BASE */
 @import url('./base/common.css');
+@import url('./base/dark-theme.css');
 @import url('./base/reset.css');
 
 /* COMPONENTS */
